@@ -6,11 +6,14 @@ const deTests = [
 ]
 
 const enTests = [
-  ["", "Аляксандр Рыгоравіч Лукашэнка", "en", "Alyaksandr Ryhoravich Lukashenka"]
+  [
+    "",
+    "Аляксандр Рыгоравіч Лукашэнка",
+    "en",
+    "Alyaksandr Ryhoravich Lukashenka",
+  ],
 ]
 
-const sciTests = [
-  ["", "Грушэўская", "scientific", "Hrušėŭskaja"]
-]
+const sciTests = [["", "Грушэўская", "scientific", "Hrušėŭskaja"]]
 
 runTests([...deTests, ...enTests, ...sciTests], "be")

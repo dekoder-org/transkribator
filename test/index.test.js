@@ -14,4 +14,4 @@ test("Check if correct applied rules are returned", () => {
 function highlight(word, highlightRange = [0, 0]) {
   const [from, to] = highlightRange
   return `${word.slice(0, from)}_${word.slice(from, to)}_${word.slice(to)}`
-} 
+}

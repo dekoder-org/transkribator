@@ -5,7 +5,7 @@ exports.runTests = async function runTests(tests = [], from) {
     const [name, input, to, expectedOutput, _overrideOpts = {}] = tst
     const options = { from, to, ..._overrideOpts }
     const output = transcribe(input, options)
-    test(`${name}: ${input} (${from}) -> ${output}`, () => {
+    test(`${name}: ${input} (${from}) -> ${output} (${to})`, () => {
       expect(output).toBe(expectedOutput)
     })
   }

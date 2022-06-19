@@ -1,7 +1,12 @@
 const { runTests } = require("./_tester.js")
 
 const deTests = [
-  ["Hruschewsky", "Михайло Сергійович Грушевський", "de", "Mychailo Serhijowytsch Hruschewsky"],
+  [
+    "Hruschewsky",
+    "Михайло Сергійович Грушевський",
+    "de",
+    "Mychailo Serhijowytsch Hruschewsky",
+  ],
   ["’", "бур’ян", "de", "burjan"],
   ["ьо", "багатьох", "de", "bahatjoch"],
   ["Namen1", "Валентина", "de", "Valentyna"],
@@ -18,8 +23,6 @@ const enTests = [
   ["’", "бур’ян", "en", "burian"],
 ]
 
-const sciTests = [
-  ["’", "бур’ян", "scientific", "bur’jan"],
-]
+const sciTests = [["’", "бур’ян", "scientific", "bur’jan"]]
 
 runTests([...deTests, ...enTests, ...sciTests], "uk")

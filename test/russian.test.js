@@ -8,12 +8,8 @@ const deTests = [
   ["Namen", "Александр Валентина.", "de", "Alexander Valentina."],
 ]
 
-const enTests = [
+const enTests = []
 
-]
-
-const sciTests = [
-  ["ъ/ь", "объехать", "scientific", "obʺechatʹ"]
-]
+const sciTests = [["ъ/ь", "объехать", "scientific", "obʺechatʹ"]]
 
 runTests([...deTests, ...enTests, ...sciTests], "ru")

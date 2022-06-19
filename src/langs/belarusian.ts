@@ -46,14 +46,14 @@ export const be: LangDef[] = [
       ...jRules,
       {
         desc: "й nicht wiedergegeben nach ы und і",
-        cond: ({ c, prev }) =>
-          c === "й" && ["ы", "і"].includes(prev),
+        cond: ({ c, prev }) => c === "й" && ["ы", "і"].includes(prev),
         val: "",
         range: [-1, 1],
       },
       {
         desc: "V statt W am Wortbeginn (gebräuchliche Namensschreibung)",
-        cond: ({ c, w }) => c === "в" && !!w.match(/^(валянцін|віктар|веранік)/i),
+        cond: ({ c, w }) =>
+          c === "в" && !!w.match(/^(валянцін|віктар|веранік)/i),
         val: "v",
       },
     ],

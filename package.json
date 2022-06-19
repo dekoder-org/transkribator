@@ -14,9 +14,9 @@
   "types": "dist/transkribator.d.ts",
   "scripts": {
     "prepare": "npm run build",
-    "start": "npx jest --watch",
+    "start": "jest --watch",
     "build": "rm -rf dist && microbundle",
-    "test": "npx jest"
+    "test": "jest --verbose"
   },
   "author": "Daniel Marcus <daniel.marcus@dekoder.org>",
   "license": "MIT",
@@ -24,5 +24,8 @@
     "jest": "^28.1.1",
     "microbundle": "^0.15.0",
     "typescript": "^4.7.4"
+  },
+  "prettier": {
+    "semi": false
   }
 }

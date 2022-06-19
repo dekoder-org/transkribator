@@ -41,14 +41,15 @@ export const uk: LangDef[] = [
       я: "ja",
       "'": "",
       "’": "",
-      "ʼ": "",
+      ʼ: "",
     },
     rules: [
       {
         desc: "є -> je am Wortanfang, nach ь und Vokalen",
-        cond: ({ c, prev, isVowel }) => c === "є" && (isVowel(prev) || ["", "ь"].includes(prev)),
+        cond: ({ c, prev, isVowel }) =>
+          c === "є" && (isVowel(prev) || ["", "ь"].includes(prev)),
         val: "je",
-        range: [-1, 1]
+        range: [-1, 1],
       },
       ...xRules,
       sRule,
@@ -56,14 +57,15 @@ export const uk: LangDef[] = [
         desc: "й nicht wiedergegeben nach и",
         cond: ({ c, prev }) => c === "й" && prev === "и",
         val: "",
-        range: [-1, 1]
+        range: [-1, 1],
       },
       ...jRules,
       {
         desc: "V statt W am Wortbeginn (gebräuchliche Namensschreibung)",
-        cond: ({c, w}) => c === "в" && !!w.match(/^(валентин|віктор|веронік)/i),
-        val: "v"
-      }
+        cond: ({ c, w }) =>
+          c === "в" && !!w.match(/^(валентин|віктор|веронік)/i),
+        val: "v",
+      },
     ],
   },
 
@@ -106,41 +108,41 @@ export const uk: LangDef[] = [
       я: "ia",
       "'": "",
       "’": "",
-      "ʼ": "",
+      ʼ: "",
     },
     rules: [
       {
         desc: "є -> ye at the beginning of the word",
         cond: ({ c, prev }) => c === "є" && prev === "",
-        val: "ye"
+        val: "ye",
       },
       {
         desc: "ї -> yi at the beginning of the word",
         cond: ({ c, prev }) => c === "ї" && prev === "",
-        val: "yi"
+        val: "yi",
       },
       {
         desc: "й -> y at the beginning of the word",
         cond: ({ c, prev }) => c === "й" && prev === "",
-        val: "y"
+        val: "y",
       },
       {
         desc: "ю -> yu at the beginning of the word",
         cond: ({ c, prev }) => c === "ю" && prev === "",
-        val: "yu"
+        val: "yu",
       },
       {
         desc: "я -> ya at the beginning of the word",
         cond: ({ c, prev }) => c === "я" && prev === "",
-        val: "ya"
+        val: "ya",
       },
       {
         desc: "зг -> zgh",
         cond: ({ c, prev }) => c === "г" && prev === "з",
         val: "gh",
-        range: [-1, 1]
-      }
-    ]
+        range: [-1, 1],
+      },
+    ],
   },
   {
     from: "uk",
@@ -181,7 +183,7 @@ export const uk: LangDef[] = [
       я: "ja",
       "'": "’",
       "’": "’",
-      "ʼ": "’",
+      ʼ: "’",
     },
   },
 ]

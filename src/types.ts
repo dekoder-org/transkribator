@@ -52,8 +52,8 @@ export interface AppliedRule {
 }
 
 export interface Result {
-  output: string,
-  appliedRules: AppliedRule[],
+  output: string
+  appliedRules: AppliedRule[]
   from: SourceLang
   to: TargetLang
 }
