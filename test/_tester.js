@@ -1,4 +1,4 @@
-const { transcribe } = require("../dist/main.js")
+const { transcribe } = require("../dist/transkribator.cjs")
 
 exports.runTests = async function runTests(tests = [], from) {
   for (const tst of tests) {
