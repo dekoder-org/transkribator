@@ -1,0 +1,29 @@
+{
+  "name": "transkribator",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "module": "dist/module.js",
+  "browser": "dist/bundle.js",
+  "scripts": {
+    "start": "npx jest --watch",
+    "build": "parcel build",
+    "test": "npx jest",
+    "test2": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "author": "Daniel Marcus <dm@dekoder.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.6.1",
+    "@parcel/transformer-typescript-types": "^2.6.1",
+    "jest": "^28.1.1",
+    "parcel": "^2.6.1"
+  },
+  "targets": {
+    "browser": {
+      "optimize": true
+    }
+  }
+}
