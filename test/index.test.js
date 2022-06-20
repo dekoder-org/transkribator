@@ -1,7 +1,7 @@
-import { transcribe } from "./_tester.js"
+import { transcribe } from "./_tester.js"
 
 test("punctuation is removed from words", () => {
-  const output = transcribe("Александр,", { to: "de", debug: true })
+  const output = transcribe("Александр,", { to: "de" })
   expect(output).toBe("Alexander,")
 })
 
