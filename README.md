@@ -4,7 +4,7 @@ Cyrillic to Latin converter. Takes Belarusian, Russian and Ukranian text and out
 
 See our [live demo at dekoder.org](https://www.dekoder.org/de/article/schreibs-wie-dekoder).
 
-![Transkribator Example Image](https://www.dekoder.org/sites/default/files/transkribator_uk_0.png)
+![Transkribator Example Image](https://www.dekoder.org/sites/default/files/transkribator_github.png)
 
 ## Install 
 
@@ -26,6 +26,7 @@ Or in the browser:
 ```html
 <script src="https://unpkg.com/transkribator"></script>
 <script>
+  const { transcribe } = transkribator
   transcribe("Валянцін Акудовіч", { from: "be", to: "scientific" })
   // returns "Valjancin Akudovič"
 </script>
