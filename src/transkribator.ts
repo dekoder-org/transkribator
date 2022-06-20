@@ -11,6 +11,7 @@ export class Transkribator {
     this.alphabet = Object.keys(this.def.dict)
     this.appliedRules = []
     this.debug = debug
+    if (this.debug) console.log(this.alphabet)
   }
 
   transcribe(input = "") {
@@ -65,12 +66,12 @@ export class Transkribator {
   }
 
   normalize(charOrStr = "") {
-    const inAlphabet = new RegExp(`[${this.alphabet.join()}]`, "i")
+    const inAlphabet = new RegExp(`[${this.alphabet.join("")}]`, "i")
     return charOrStr.match(inAlphabet) ? charOrStr.toLowerCase() : ""
   }
 
   clean(str: string): string {
-    const punctationAtEnd = new RegExp(`([^${this.alphabet.join()}]+)$`, "ig")
-    return str.replace(punctationAtEnd, "")
+    const punctuationAtEnd = new RegExp(`([^${this.alphabet.join("")}]+)$`, "ig")
+    return str.replace(punctuationAtEnd, "")
   }
 }
