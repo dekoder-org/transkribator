@@ -51,7 +51,8 @@ export class Transkribator {
     for (const rule of this.def.rules || []) {
       const { desc: description, cond, val, range = [0, 1] } = rule
       if (cond(args)) {
-        const affectedLetters: LetterRange = [pos + range[0], pos + range[1]]
+        const rangeFrom = Math.max(pos + range[0], 0)
+        const affectedLetters: LetterRange = [rangeFrom, pos + range[1]]
         const appliedRule = { description, word, affectedLetters }
         if (description) this.appliedRules.push(appliedRule)
         return val
