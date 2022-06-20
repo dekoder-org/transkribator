@@ -1,5 +1,4 @@
-const { transcribe } = require("../dist/index.cjs")
-
+import { transcribe } from "./_tester.js"
 
 test("Check if correct applied rules are returned", () => {
   const { appliedRules } = transcribe("Ксения", { to: "de", showDetails: true })

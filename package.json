@@ -21,6 +21,7 @@
   "author": "Daniel Marcus <daniel.marcus@dekoder.org>",
   "license": "MIT",
   "devDependencies": {
+    "@swc/jest": "^0.2.21",
     "jest": "^28.1.1",
     "microbundle": "^0.15.0",
     "typescript": "^4.7.4"

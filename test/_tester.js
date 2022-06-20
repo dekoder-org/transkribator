@@ -1,6 +1,8 @@
-const { transcribe } = require("../dist/index.cjs")
+import { transcribe } from "../src/index.ts"
+// import { transcribe } from "../dist/index.module.js"
+export { transcribe } 
 
-exports.runTests = async function runTests(tests = [], from) {
+export async function runTests(tests = [], from) {
   for (const tst of tests) {
     const [name, input, to, expectedOutput, _overrideOpts = {}] = tst
     const options = { from, to, ..._overrideOpts }
