@@ -1,4 +1,4 @@
-const { transcribe } = require("../dist/transkribator.cjs")
+const { transcribe } = require("../dist/index.cjs")
 
 const { appliedRules } = transcribe("Ксения", { to: "de", showDetails: true })
 
