@@ -28,5 +28,6 @@
   },
   "prettier": {
     "semi": false
-  }
+  },
+  "sideEffects": false
 }
