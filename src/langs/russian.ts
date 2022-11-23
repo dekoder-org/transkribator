@@ -124,7 +124,7 @@ export const ru: LangDef[] = [
       ш: "sh",
       щ: "sch",
       ъ: "",
-      ы: "i",
+      ы: "y",
       ь: "",
       э: "e",
       ю: "yu",
