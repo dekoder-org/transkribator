@@ -81,7 +81,8 @@ export const ru: LangDef[] = [
       },
       {
         desc: "j statt i am Wortende (gebräuchliche Namensschreibung)",
-        cond: ({ c, w }) => c === "й" && ["алексей", "сергей", "андрей"].includes(w),
+        cond: ({ c, w }) =>
+          c === "й" && ["алексей", "сергей", "андрей"].includes(w),
         val: "j",
       },
       {
