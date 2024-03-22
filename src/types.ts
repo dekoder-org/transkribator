@@ -1,3 +1,6 @@
+export type TranscribeReturnType<T extends { showDetails?: boolean }> =
+  T["showDetails"] extends true ? Result : string
+
 export type SourceLang = "be" | "ru" | "uk"
 export type TargetLang = "de" | "en" | "scientific"
 
