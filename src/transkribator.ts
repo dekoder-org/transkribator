@@ -71,7 +71,10 @@ export class Transkribator {
   }
 
   clean(str: string): string {
-    const punctuationAtEnd = new RegExp(`([^${this.alphabet.join("")}]+)$`, "ig")
+    const punctuationAtEnd = new RegExp(
+      `([^${this.alphabet.join("")}]+)$`,
+      "ig",
+    )
     return str.replace(punctuationAtEnd, "")
   }
 }

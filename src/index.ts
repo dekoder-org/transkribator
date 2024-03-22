@@ -9,7 +9,7 @@ const DEFAULT_OPTIONS: Options = { from: "ru", to: "en", showDetails: false }
 
 export function transcribe<T extends UserOptions = {}>(
   input = "",
-  _options: T = {} as T
+  _options: T = {} as T,
 ): TranscribeReturnType<T> {
   const options = { ...DEFAULT_OPTIONS, ..._options }
   const { from, to, showDetails, debug } = options

@@ -17,7 +17,7 @@
     "start": "jest --watch",
     "build": "rm -rf dist && microbundle",
     "test": "jest --verbose",
-    "prettier": "prettier --write ./src/**/*"
+    "prettier": "prettier --write \"./src/**/*\""
   },
   "author": "Daniel Marcus <daniel.marcus@dekoder.org>",
   "license": "MIT",

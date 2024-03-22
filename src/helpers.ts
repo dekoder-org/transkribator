@@ -8,8 +8,8 @@ export function matchCase(char = "", compareChar = "", word = "") {
   return isUpperCase(word)
     ? char.toUpperCase()
     : isUpperCase(compareChar)
-    ? capitalizeFirst(char)
-    : char
+      ? capitalizeFirst(char)
+      : char
 }
 
 function isUpperCase(str: string) {
