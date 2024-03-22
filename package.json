@@ -1,6 +1,6 @@
 {
   "name": "transkribator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Cyrillic to Latin converter",
   "type": "module",
   "source": "src/index.ts",
