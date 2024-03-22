@@ -13,7 +13,7 @@
   "unpkg": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepare": "npm run build",
+    "prepare": "npm run test && npm run build",
     "start": "jest --watch",
     "build": "rm -rf dist && microbundle",
     "test": "jest --verbose",
